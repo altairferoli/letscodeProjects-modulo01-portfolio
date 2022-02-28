@@ -14,6 +14,9 @@ html {
 
   text-decoration: none;
   list-style: none;
+
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 body {
   height: 100%;
@@ -54,8 +57,7 @@ a:hover {
   line-height: 3rem;
   text-align: justify;
 
-  filter: drop-shadow(0 0 1rem black) drop-shadow(0 0 2rem black);
-  -webkit-transform: translate3d(0, 0, 0);
+  filter: drop-shadow(0 0 1rem black) drop-shadow(0 0 2rem black);  
 }
 .tooltip .tooltiptext {
   min-width: fit-content;
