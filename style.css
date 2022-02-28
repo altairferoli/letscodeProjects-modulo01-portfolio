@@ -92,8 +92,8 @@ a:hover {
 /* NAV BAR */
 
 nav {
-  min-width: 600px;
-  width: 100%;
+  min-width: 500px;
+  width: 100vw;
   height: 6rem;
   padding: 1rem 0;
 
@@ -203,7 +203,7 @@ nav ul li:hover .nav-menu-link,
     display: block;
   }
   nav {
-    width: 100%;
+    width: 100vw;
     height: 6rem;
     line-height: 5rem;
 
@@ -380,7 +380,7 @@ header {
   padding-top: 6rem;
 }
 .footer {
-  min-width: 600px;
+  min-width: 500px;
   height: 25rem;
 
   display: flex;
@@ -391,7 +391,7 @@ header {
 }
 .parallax {
   width: 100vw;
-  min-width: 600px;
+  min-width: 500px;
   min-height: 105vh;
 
   display: flex;
@@ -406,7 +406,7 @@ header {
 }
 .parallax-small {
   width: 100vw;
-  min-width: 600px;
+  min-width: 500px;
   min-height: 70vh;
 
   display: flex;
@@ -460,13 +460,14 @@ header {
 /* SECTIONS */
 
 .section-wrapper {
-  min-width: 600px;
+  min-width: 500px;
   padding: 2rem;
   display: grid;
 }
 .section-title {
   width: 100%;
-  line-height: 15rem;
+  margin: 5rem 0;
+  line-height: 7rem;
   font-size: 7rem;
   text-align: center;
 }
@@ -630,6 +631,11 @@ header {
   position: relative;
   display: block;
 }
+@media only screen and (max-aspect-ratio: 3/4), (max-width: 840px) {
+  .carousel a {
+    height: 50vw;
+  }
+}
 
 /* CAROUSEL SCROLLBAR */
 
@@ -705,6 +711,14 @@ header {
   font-size: 2rem;
   margin: 2rem;
 }
+@media only screen and (max-aspect-ratio: 3/4), (max-width: 840px) {
+  .home *{
+    max-width: 100vw;
+  }
+  .header-description {
+    grid-template-columns: 20rem 2.2rem 20rem;
+  }
+}
 
 /* PROJECTS */
 
@@ -729,10 +743,10 @@ header {
   transform: scale(1.1);
 }
 @media only screen and (max-aspect-ratio: 3/4), (max-width: 840px) {
-  .projetos {
+  .projects {
     flex-wrap: wrap;
   }
-  .projetos img {
+  .projects img {
     margin: 3vh;
     width: 80%;
   }
@@ -741,7 +755,8 @@ header {
 /* SOBRE */
 
 .section-wrapper-about {
-  min-width: 600px;
+  min-width: 500px;
+  width: 100vw;
   padding: 2rem;
   display: grid;
   align-items: center;
