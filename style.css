@@ -423,37 +423,37 @@ header {
 /* BACKGROUNDS */
 
 .home {
-  background-image: url(/files/geral/header-background3.jpg);
+  background-image: url(./files/geral/header-background3.jpg);
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 20rem black;
 }
 .trabalho {
-  background-image: url(/files/geral/trabalho-background.jpg);
+  background-image: url(./files/geral/trabalho-background.jpg);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .canalpedrin {
-  background-image: url(/files/pedrin/canalpedrin-background.jpg);
+  background-image: url(./files/pedrin/canalpedrin-background.jpg);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .pantheon {
-  background-image: url(/files/pantheon/pantheon-background.png);
+  background-image: url(./files/pantheon/pantheon-background.png);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .feroli-informatica {
-  background-image: url(/files/feroli-informatica/feroli-informatica-background.jpg);
+  background-image: url(./files/feroli-informatica/feroli-informatica-background.jpg);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .sobre1 {
-  background-image: url(/files/sobre/about-background.jpg);
+  background-image: url(./files/sobre/about-background.jpg);
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 20rem black;
 }
 .sobre2 {
-  background-image: url(/files/sobre/studies-background.jpg);
+  background-image: url(./files/sobre/studies-background.jpg);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .sobre3 {
-  background-image: url(/files/sobre/work-background.jpg);
+  background-image: url(./files/sobre/work-background.jpg);
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -656,10 +656,10 @@ header {
   visibility: visible;  
 }
 .carousel::-webkit-scrollbar-button:single-button:increment {
-  background-image: url(/files/geral/next-filled.png);  
+  background-image: url(./files/geral/next-filled.png);  
 }
 .carousel::-webkit-scrollbar-button:single-button:decrement {
-  background-image: url(/files/geral/back-filled.png);
+  background-image: url(./files/geral/back-filled.png);
 }
 
 /* HEADER */
