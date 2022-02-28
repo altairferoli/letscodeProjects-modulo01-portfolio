@@ -53,7 +53,9 @@ a:hover {
   padding: 1rem;
   line-height: 3rem;
   text-align: justify;
-  text-shadow: 0 0 1rem black, 0 0 2rem black, 0 0 3rem black;
+
+  filter: drop-shadow(0 0 1rem black) drop-shadow(0 0 2rem black);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .tooltip .tooltiptext {
   min-width: fit-content;
@@ -292,7 +294,7 @@ nav ul li:hover .nav-menu-link,
   text-align: center;
 
   background-color: black;
-  filter: drop-shadow(0 .5rem 1.5rem black);
+  filter: drop-shadow(0 0.5rem 1.5rem black);
 
   visibility: hidden;
   opacity: 0;
@@ -553,7 +555,7 @@ header {
 
   background-color: white;
   border-radius: 50%;
-  filter: drop-shadow(0 .4rem .8rem black);
+  filter: drop-shadow(0 0.4rem 0.8rem black);
 }
 .social-media .card {
   width: 4rem;
@@ -599,13 +601,13 @@ header {
   align-items: center;
 
   scroll-snap-align: start;
-  
+
   transition: ease 0.3s;
 }
 .carousel figure {
   height: 88%;
   margin: 2vw;
-  filter: drop-shadow(0 .4rem .8rem black);
+  filter: drop-shadow(0 0.4rem 0.8rem black);
   border-radius: 2rem;
 }
 .carousel a:hover {
@@ -691,7 +693,7 @@ a:hover {
 .header-picture img {
   height: 40vh;
   margin: 3rem 0;
-  filter: drop-shadow(0 .4rem .8rem black) drop-shadow(0 1rem 3rem black);
+  filter: drop-shadow(0 0.4rem 0.8rem black) drop-shadow(0 1rem 3rem black);
   border-radius: 50%;
 }
 .header-title {
@@ -758,7 +760,7 @@ a:hover {
     margin: 3rem;
   }
   .projects img {
-    width: 80%;    
+    width: 80%;
   }
 }
 
@@ -810,7 +812,7 @@ a:hover {
 .photos img {
   margin: 1.5rem;
   width: 95%;
-  filter: drop-shadow(0 .4rem .8rem black);
+  filter: drop-shadow(0 0.4rem 0.8rem black);
   border-radius: 2rem;
 }
 .photos a:hover {
