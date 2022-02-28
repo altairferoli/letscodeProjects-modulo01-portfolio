@@ -2,7 +2,7 @@
 
 html {
   font-size: 62.5%;
-  height: 100%;  
+  height: 100%;
   overflow: hidden;
 }
 * {
@@ -15,7 +15,7 @@ html {
   text-decoration: none;
   list-style: none;
 }
-body {  
+body {
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -53,7 +53,7 @@ a:hover {
   padding: 1rem;
   line-height: 3rem;
   text-align: justify;
-  text-shadow: 0 0 1rem black, 0 0 2rem black, 0 0 3rem black, 0 0 4rem black;
+  text-shadow: 0 0 1rem black, 0 0 2rem black, 0 0 3rem black;
 }
 .tooltip .tooltiptext {
   min-width: fit-content;
@@ -64,7 +64,7 @@ a:hover {
 
   position: absolute;
   text-align: center;
-  z-index: 10;
+  z-index: 100;
 
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
@@ -160,7 +160,7 @@ nav ul li {
   color: white;
 
   cursor: auto;
-  
+
   transition: 0.3s ease;
 }
 nav ul li .nav-menu-link {
@@ -174,7 +174,7 @@ nav ul li .nav-menu-link {
 nav ul li:hover,
 .dropdown-content p:hover {
   background-color: rgba(255, 255, 255, 1);
-  color: black;  
+  color: black;
   transform: scale(1.1);
 }
 nav ul li:hover .nav-menu-link,
@@ -292,7 +292,7 @@ nav ul li:hover .nav-menu-link,
   text-align: center;
 
   background-color: black;
-  box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 .5rem 1.5rem black);
 
   visibility: hidden;
   opacity: 0;
@@ -392,6 +392,7 @@ header {
   align-items: center;
 
   background-color: black;
+  filter: drop-shadow(0 0 1rem black) drop-shadow(0 0 2rem black) drop-shadow(0 0 3rem black);
 }
 .parallax {
   width: 100vw;
@@ -406,7 +407,7 @@ header {
   background-position: center;
   background-attachment: fixed;
   background-blend-mode: darken;
-  box-shadow: inset 0 0 10rem black;
+  /* box-shadow: inset 0 0 5rem black; */
 }
 .parallax-small {
   width: 100vw;
@@ -421,43 +422,42 @@ header {
   background-position: center;
   background-attachment: fixed;
   background-blend-mode: darken;
-  box-shadow: inset 0 0 10rem black;
+  /* box-shadow: inset 0 0 5rem black; */
 }
 
 /* BACKGROUNDS */
 
-.home, .contato {
-  background-image: url(./files/geral/header-background3.jpg);
+.home,
+.contato {
+  background-image: url(./files/geral/header-background3.webp);
   background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 0 20rem black;
 }
 .trabalho {
-  background-image: url(./files/geral/trabalho-background.jpg);
+  background-image: url(./files/geral/trabalho-background.webp);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .canalpedrin {
-  background-image: url(./files/pedrin/canalpedrin-background.jpg);
+  background-image: url(./files/pedrin/canalpedrin-background.webp);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .pantheon {
-  background-image: url(./files/pantheon/pantheon-background.png);
+  background-image: url(./files/pantheon/pantheon-background.webp);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .feroli-informatica {
-  background-image: url(./files/feroli-informatica/feroli-informatica-background.jpg);
+  background-image: url(./files/feroli-informatica/feroli-informatica-background.webp);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .sobre1 {
-  background-image: url(./files/sobre/about-background.jpg);
+  background-image: url(./files/sobre/about-background.webp);
   background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 0 20rem black;
 }
 .sobre2 {
-  background-image: url(./files/sobre/studies-background.jpg);
+  background-image: url(./files/sobre/studies-background.webp);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .sobre3 {
-  background-image: url(./files/sobre/work-background.jpg);
+  background-image: url(./files/sobre/work-background.webp);
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -553,12 +553,12 @@ header {
 
   background-color: white;
   border-radius: 50%;
-  box-shadow: 0 0 4rem 0.5rem rgba(0, 0, 0, 0.25), 0 0 3rem 0.5rem rgba(0, 0, 0, 0.75);
+  filter: drop-shadow(0 .4rem .8rem black);
 }
 .social-media .card {
-  width: 4rem;  
+  width: 4rem;
   display: block;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 .social-media .card-top {
   display: block;
@@ -599,14 +599,14 @@ header {
   align-items: center;
 
   scroll-snap-align: start;
-
+  
   transition: ease 0.3s;
 }
 .carousel figure {
   height: 88%;
   margin: 2vw;
-  box-shadow: 0 1rem 3rem 0.5rem rgba(0, 0, 0, 0.15), 0 1rem 2rem 0.5rem rgba(0, 0, 0, 0.5);
-  /* border-radius: 2rem; */
+  filter: drop-shadow(0 .4rem .8rem black);
+  border-radius: 2rem;
 }
 .carousel a:hover {
   transform: scale(1.1);
@@ -616,12 +616,12 @@ header {
 
 .carousel .carousel-image {
   height: 100%;
-  /* border-radius: 2rem; */
+  border-radius: 2rem;
   display: block;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 .carousel .carousel-image-top {
-  height: 88%;
+  height: 100%;
   position: absolute;
   display: block;
   opacity: 0;
@@ -663,10 +663,10 @@ header {
   background-size: 100%;
   height: 3rem;
   width: 3rem;
-  visibility: visible;  
+  visibility: visible;
 }
 .carousel::-webkit-scrollbar-button:single-button:increment {
-  background-image: url(./files/geral/next-filled.png);  
+  background-image: url(./files/geral/next-filled.png);
 }
 .carousel::-webkit-scrollbar-button:single-button:decrement {
   background-image: url(./files/geral/back-filled.png);
@@ -678,17 +678,21 @@ header {
   justify-content: center;
   text-align: center;
 }
-.home div, .header-title, a{
-  transition: .3s ease;
+.home div,
+.header-title,
+a {
+  transition: 0.3s ease;
 }
-.home div:hover, .header-title:hover, a:hover {
+.home div:hover,
+.header-title:hover,
+a:hover {
   transform: scale(1.05);
 }
 .header-picture img {
   height: 40vh;
   margin: 3rem 0;
-  box-shadow: 0 0 5rem 1rem rgba(0, 0, 0, 1), 0 0 2rem rgba(0, 0, 0, 0.3);
-  border-radius: 50%;  
+  filter: drop-shadow(0 .4rem .8rem black) drop-shadow(0 1rem 3rem black);
+  border-radius: 50%;
 }
 .header-title {
   font-size: 4rem;
@@ -716,7 +720,7 @@ header {
   margin: 2rem;
 }
 @media only screen and (max-aspect-ratio: 3/4), (max-width: 840px) {
-  .home *{
+  .home * {
     max-width: 100vw;
   }
   .header-description {
@@ -739,9 +743,9 @@ header {
 }
 .projects img {
   margin: 1vw;
-  width: 95%;
-  box-shadow: 0 1rem 3rem 0.5rem rgba(0, 0, 0, 0.15), 0 1rem 2rem 0.5rem rgba(0, 0, 0, 0.5);
-  /* border-radius: 2rem; */
+  width: 90%;
+  filter: drop-shadow(0 1rem 3rem black);
+  border-radius: 2rem;
 }
 .projects a:hover {
   transform: scale(1.1);
@@ -750,9 +754,11 @@ header {
   .projects {
     flex-wrap: wrap;
   }
+  .projects a {
+    margin: 3rem;
+  }
   .projects img {
-    margin: 3vh;
-    width: 80%;
+    width: 80%;    
   }
 }
 
@@ -804,8 +810,8 @@ header {
 .photos img {
   margin: 1.5rem;
   width: 95%;
-  box-shadow: 0 1rem 3rem 0.5rem rgba(0, 0, 0, 0.15), 0 1rem 2rem 0.5rem rgba(0, 0, 0, 0.5);
-  /* border-radius: 2rem; */
+  filter: drop-shadow(0 .4rem .8rem black);
+  border-radius: 2rem;
 }
 .photos a:hover {
   transform: scale(1.1);
