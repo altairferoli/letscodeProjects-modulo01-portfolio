@@ -57,12 +57,12 @@ a:hover {
   line-height: 3rem;
   text-align: justify;
 
-  filter: drop-shadow(0 0 1rem black) drop-shadow(0 0 2rem black);  
+  filter: drop-shadow(0 0 1rem black) drop-shadow(0 0 2rem black);
 }
 .tooltip .tooltiptext {
   min-width: fit-content;
   min-height: fit-content;
-  width: 10rem;
+  width: 20rem;
   padding: 1rem;
   border-radius: 0.5rem;
 
@@ -694,7 +694,7 @@ a:hover {
 }
 .header-picture img {
   height: 40vh;
-  margin: 3rem 0;
+  margin: 3rem 0;  
   filter: drop-shadow(0 0.4rem 0.8rem black) drop-shadow(0 1rem 3rem black);
   border-radius: 50%;
 }
@@ -731,7 +731,7 @@ a:hover {
     font-size: 1.8rem;
     grid-template-columns: 16rem 2.2rem 16rem;
   }
-  .header-picture img{
+  .header-picture img {
     width: 70vw;
     height: auto;
   }
@@ -833,5 +833,47 @@ a:hover {
   .photos img {
     margin: 3vh;
     width: 80%;
+  }
+}
+
+/* CONTATO */
+
+.section-wrapper-contact {
+  min-width: 360px;
+  width: 100vw;
+  padding: 2rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 6fr 2rem 10fr;
+}
+.contact-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-picture img {
+  width: 100%;
+  filter: drop-shadow(0 0.4rem 0.8rem black) drop-shadow(0 1rem 3rem black);
+  border-radius: 50%;
+}
+.form-container {
+  width: 720px;
+  max-width: 95vw;
+  height: 120rem;
+  justify-self: center;
+}
+.form {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-aspect-ratio: 3/4), (max-width: 840px) {
+  .section-wrapper-contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact-picture img {
+    width: 80%;
+    height: auto;
+    margin: 1rem;
   }
 }
