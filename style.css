@@ -13,7 +13,7 @@ html {
   scroll-behavior: smooth;
 
   text-decoration: none;
-  list-style: none;  
+  list-style: none;
 }
 body {
   height: 100%;
@@ -30,7 +30,8 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-header,section *{
+header,
+section * {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -84,6 +85,21 @@ a:hover {
   opacity: 1;
   top: 100%;
 }
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.nav-content {
+  width: 100vw;
+  max-width: 1600px;
+}
+.section-wrapper,
+.section-wrapper-about,
+.section-wrapper-contact * {
+  max-width: 1600px;
+}
 
 /* PAGE SCROLLBAR */
 
@@ -103,12 +119,14 @@ nav {
   min-width: 360px;
   width: 100vw;
   height: 6rem;
-  padding: 1rem 0;
+  padding: 1rem;
 
   line-height: 4rem;
   text-align: center;
   font-size: 2rem;
 
+  display: flex;
+  justify-content: center;
   position: fixed;
   z-index: 200;
   top: 0;
@@ -379,12 +397,6 @@ nav ul li:hover .nav-menu-link,
 
 /* BACKGROUND EFFECTS AND SETTINGS */
 
-.page-container {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
 header {
   padding-top: 6rem;
 }
@@ -411,7 +423,7 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-blend-mode: darken;  
+  background-blend-mode: darken;
 }
 .parallax-small {
   width: 100vw;
@@ -693,7 +705,7 @@ a:hover {
 }
 .header-picture img {
   height: 40vh;
-  margin: 3rem 0;  
+  margin: 3rem 0;
   filter: drop-shadow(0 0.4rem 0.8rem black) drop-shadow(0 1rem 3rem black);
   border-radius: 50%;
 }
